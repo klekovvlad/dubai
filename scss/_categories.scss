@@ -9,6 +9,7 @@
     }
 
     .category {
+        color: var(--text);
         cursor: pointer;
         @include font(700);
         padding: 10px 26px;

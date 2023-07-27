@@ -42,4 +42,8 @@ select {
         @include font(500);
         font-size: 1rem;
     }
+
+    &:focus {
+        outline: none;
+    }
 }
