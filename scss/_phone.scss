@@ -1,0 +1,17 @@
+.phone {
+    font-size: 1.25rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 12px;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background: url('../img/icons/phone.svg') no-repeat center;
+        opacity: 0.4;
+    }
+}

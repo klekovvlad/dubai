@@ -1,0 +1,43 @@
+.button {
+    @include font(500);
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    display: block;
+    max-width: max-content;
+    background: var(--main);
+    color: var(--white);
+    border-radius: 100px;
+    padding: 15px 24px;
+    text-align: center;
+}
+
+.slider-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+
+    @include mobile {
+        display: none;
+    }
+}
+
+.slider-button {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--gray);
+    background: url('../img/icons/slider-arrow.svg') no-repeat center;
+    background-size: 24px 24px;
+    border-radius: 50%;
+
+    &-prev {
+        transform: rotate(180deg);
+    }
+
+    &-disabled {
+        pointer-events: none;
+        opacity: .5;
+    }
+}

@@ -1,0 +1,25 @@
+.categories {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+
+    @include mobile {
+        overflow-x: scroll;
+    }
+
+    .category {
+        cursor: pointer;
+        @include font(700);
+        padding: 10px 26px;
+        border: 1px solid var(--main);
+        border-radius: 100px;
+        background: var(--white);
+        font-size: 0.9375rem;
+
+        &.active {
+            color: var(--white);
+            background: var(--main);
+        }
+    }
+}

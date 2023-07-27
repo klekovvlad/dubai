@@ -1,0 +1,91 @@
+.card {
+    padding: 10px 10px 24px;
+    background: var(--white);
+    border-radius: 20px;
+    color: var(--text);
+
+    &-img {
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    &-price {
+        border-radius: 60px;
+        background: rgba(255, 255, 255, 0.60);
+        backdrop-filter: blur(10px);
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        padding: 10px 14px 10px 34px;
+        color: var(--black);
+
+        .value {
+            font-weight: 700;
+        }
+
+        &::before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--blue);
+            position: absolute;
+            top: 50%;
+            left: 14px;
+            transform: translate(0, -50%);
+        }
+    }
+
+    &-category {
+        border-radius: 60px;
+        padding: 6px 10px;
+        font-size: 0.9375rem;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        background: var(--main);
+        color: #fff;
+        font-weight: 700;
+    }
+
+    &-info {
+        padding: 24px 14px 0px;
+
+        p {
+            margin: 4px 0px 16px;
+        }
+    }
+
+    &-chars {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: start;
+        justify-content: start;
+        gap: 10px;
+    }
+
+    &-char {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 5px;
+        padding: 6px 10px;
+        border: 1px solid var(--blue);
+        border-radius: 44px;
+
+        .icon {
+            width: 18px;
+            height: 18px;
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+}

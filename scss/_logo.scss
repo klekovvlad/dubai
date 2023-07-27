@@ -1,0 +1,27 @@
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 12px;
+    max-width: 300px;
+
+    font-size: 0.875rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: var(--text);
+    font-weight: 600;
+
+    @include tablet {
+        max-width: 200px;
+        img {
+            max-width: 100px;
+        }
+    }
+
+    @include mobile {
+        font-size: 0.75rem;
+        img {
+            max-width: 130px;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    color: var(--text);
+    background: var(--body);
+    @include font(500);
+    line-height: 1.4;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0px 15px;
+    margin: 0px auto;
+
+    @include tablet {
+        max-width: 100%;
+    }
+
+    @include mobile {
+        padding: 0px 16px;
+    }
+}
+
+.desktop {
+    @include mobile {
+        display: none;
+    }
+}
+
+.mobile {
+    display: none;
+    @include mobile {
+        display: block;
+    }
+}

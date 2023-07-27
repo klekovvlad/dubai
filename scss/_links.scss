@@ -1,0 +1,32 @@
+.link {
+    &-all {
+        color: var(--main);
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 14px;
+
+        &::after {
+            content: '';
+            width: 24px;
+            height: 24px;
+            background: url('../img/icons/arrow-all.svg') no-repeat center;
+            background-size: contain;
+            display: inline-block;
+        }
+
+        &.desktop {
+            @include mobile {
+                display: none;
+            }
+        }
+
+        &.mobile {
+            display: none;
+            @include mobile {
+                display: flex;
+            }
+        }
+    }
+}
