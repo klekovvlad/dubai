@@ -1,0 +1,161 @@
+.footer {
+    background: #fff;
+    border-top: 1px solid rgba($color: #000000, $alpha: 0.2);
+
+    &-wrapper {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        gap: 130px;
+        padding: 60px 0px 34px;
+
+        @include tablet {
+            flex-wrap: wrap;
+            justify-content: start;
+            gap: 60px;
+        }
+
+        @include mobile {
+            gap: 40px;
+        }
+    }
+
+    &-col {
+        flex: 0 0 280px;
+
+        @include mobile {
+            flex: 0 0 100%;
+
+            p {
+                font-size: 0.875rem;
+            }
+        }
+    }
+
+    &-contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: start;
+        gap: 30px;
+
+        @include tablet {
+            align-items: start;
+        }
+
+        @include mobile {
+            width: 100%;
+
+            &-phones {
+                width: 100%;
+            }
+        }
+
+        .phone {
+            color: #000000;
+            margin: 0px 0px 12px;
+
+            &::before {
+                display: none;
+            }
+
+            @include mobile {
+                margin: 0px 0px 16px;
+            }
+        }
+
+        .button {
+            background: transparent;
+            color: var(--main);
+            border: 1px solid var(--main);
+            margin-left: auto;
+
+            @include mobile {
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+
+        &-social {
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            gap: 15px;
+        }
+
+        &-links {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            justify-content: start;
+            gap: 10px;
+
+            @include tablet {
+                align-items: start;
+            }
+        }
+    }
+
+    .logo {
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        gap: 12px;
+        font-size: 0.75rem;
+        margin: 0px 0px 25px;
+
+        @include mobile {
+            margin: 0px 0px 16px;
+        }
+    }
+
+    &-nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap: 20px 100px;
+        grid-auto-flow: column;
+
+        @include mobile {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-auto-flow: row;
+            grid-gap: 20px;
+        }
+
+        a {
+            text-transform: uppercase;
+            color: var(--footer-link);
+            font-size: 0.875rem;
+            white-space: nowrap;
+        }
+    }
+
+    &-bottom {
+        padding: 20px 0px;
+        background: var(--main);
+        color: var(--white);
+
+        &-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            grid-gap: 8px;
+
+            @include mobile {
+                flex-direction: column;
+                align-items: start;
+                justify-content: start;
+            }
+        }
+
+        a {
+            color: var(--white);
+            text-decoration: underline;
+
+            @include mobile {
+                font-size: .9375rem;
+            }
+        }
+    }
+}

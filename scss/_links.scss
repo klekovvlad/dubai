@@ -6,6 +6,7 @@
         align-items: center;
         justify-content: start;
         gap: 14px;
+        white-space: nowrap;
 
         &::after {
             content: '';
@@ -28,5 +29,50 @@
                 display: flex;
             }
         }
+    }
+}
+
+.social-link {
+    img {
+        width: 32px;
+        height: 32px;
+        object-fit: cover;
+        object-position: center;
+
+        @include mobile {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
+
+.skype,
+.mail {
+    color: rgba($color: #000000, $alpha: 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+}
+
+.skype {
+    &::before {
+        background-image: url('../img/icons/skype.svg');
+    }
+}
+
+.mail {
+    &::before {
+        background-image: url('../img/icons/mail.svg');
     }
 }
