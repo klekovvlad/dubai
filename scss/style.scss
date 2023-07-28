@@ -1,29 +1,55 @@
+//Цвета
 @import './variables';
+//Сброс стилей
 @import './reset';
+//Подключение шрифтов
 @import './fonts';
+//Миксины
 @import './mixins';
+//Базовые настройки
 @import './settings';
 
+//Стили логотипа
 @import './logo';
+//Стили заголовоков
 @import './titles';
+//Стили для выпадающего меню с языками
 @import './language';
+//Стили для ссылки на телефон
 @import './phone';
+//Стили для кнопок
 @import './button';
+//Стили для полей ввода
 @import './inputs';
+//Стили для кнопок с категориями
 @import './categories';
+//Стили для различных ссылко
 @import './links';
+//Стили для пагинаций
 @import './pagination';
 
+//Стили для карточек с объектами
 @import './card';
 
+//Хедер
 @import './header';
+
+//Главная страница. Новые объекты
 @import './objects';
+//Главная страница. Форма больше информации
 @import './moreinfo';
+//Главная страница. Категории объектов
 @import './objcategories';
+//Главная страница. Партнеры
 @import './partners';
+//Главная страница. О нас
 @import './about';
+//Главная страница. Галерея
 @import './gallery';
+//Главная страница. Отзывы
 @import './feedback';
+//Главная страница. Карта
 @import './map';
 
+//Футер
 @import './footer';

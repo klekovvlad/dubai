@@ -15,28 +15,6 @@
         z-index: 2;
     }
 
-    &::before, &::after {
-        content: '';
-        position: absolute;
-        height: 120%;
-        width: 50%;
-        top: 50%;
-        left: 0;
-        border-radius: 600px;
-    }
-
-    &::before {
-        background: linear-gradient(196deg, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.00) 100%);
-        filter: blur(20px);
-        transform: translate(-50%, -50%) rotate(-125deg);
-    }
-
-    &::after {
-        background: #164668;
-        filter: blur(265px);
-        transform: translate(-50%, -50%) rotate(-45deg);
-    }
-
     h2 {
         margin: 0px 0px 32px;
 
