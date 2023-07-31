@@ -14,6 +14,17 @@ h1 {
     }
 }
 
+.aboutpage {
+    h1 {
+        font-size: 2.375rem;
+        line-height: 1.4;
+
+        @include mobile {
+            font-size: 1.625rem;
+        }
+    }
+}
+
 h2 {
     font-size: 3rem;
 

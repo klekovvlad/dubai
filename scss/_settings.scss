@@ -35,3 +35,23 @@ body {
         display: block;
     }
 }
+
+main {
+    min-height: 70vh;
+    
+    &.mainpage {
+        .gallery,
+        .objects,
+        .feedback,
+        .partners {
+            background: var(--lgth-bg);
+        }
+    }
+
+    @include mobile {
+        &:not(.mainpage) {
+            padding: 20px 0px 0px;
+            margin-top: 80px;
+        }
+    }
+}
