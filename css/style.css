@@ -598,6 +598,9 @@ input {
 }
 
 textarea.input {
+  font-family: Manrope, sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
   border-radius: 16px;
   resize: vertical;
   max-height: 300px;
@@ -1180,6 +1183,11 @@ form.blue h2 {
     display: none;
   }
 }
+@media (max-width: 767px) {
+  .header-content {
+    padding: 100px 16px 0px;
+  }
+}
 .header-content-wrapper {
   background: url("../img/header-bg.png") no-repeat center;
   background-size: cover;
@@ -1196,7 +1204,6 @@ form.blue h2 {
 @media (max-width: 767px) {
   .header-content-wrapper {
     padding: 50px 26px 70px;
-    margin: 100px 0px 0px;
   }
 }
 .header-content-wrapper h1 {

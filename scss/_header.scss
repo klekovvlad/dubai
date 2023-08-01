@@ -123,6 +123,10 @@
     }
 
     &-content {
+        @include mobile {
+            padding: 100px 16px 0px;
+        }
+
         &-wrapper {
             background: url('../img/header-bg.png') no-repeat center;
             background-size: cover;
@@ -137,7 +141,7 @@
 
             @include mobile {
                 padding: 50px 26px 70px;
-                margin: 100px 0px 0px;
+                // margin: 100px 0px 0px;
             }
 
 

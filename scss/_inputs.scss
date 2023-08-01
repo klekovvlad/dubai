@@ -126,6 +126,8 @@ input {
 }
 
 textarea.input {
+    @include font(500);
+    font-size: 1rem;
     border-radius: 16px;
     resize: vertical;
     max-height: 300px;
