@@ -216,6 +216,8 @@
             right: 0;
             left: 0;
             z-index: 5;
+            overflow: auto;
+            
 
             &-top {
                 background: #fff;
@@ -273,16 +275,13 @@
                 top: 0;
                 left: 0;
                 right: 0;
+                bottom: 0;
                 visibility: hidden;
-                min-height: 100vh;
                 opacity: 0;
-                transform: translate(0, -100%);   
-                
+                transform: translate(0, -100%); 
                 padding: 110px 0px 40px;
+                z-index: 5;
 
-                &-wrapper {
-                    height: 100%;
-                }
             }
 
             &-links {
@@ -314,6 +313,8 @@
             }
 
             &.open {
+                background: var(--main);
+                height: 100vh;
                 .header-mobile {
                     &-nav {
                         opacity: 1;
