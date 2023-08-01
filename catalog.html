@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог недвижимости</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-wrapper">
+                    <nav class="header-top-links">
+                        <a href="#" class="header-top-link">О нас</a>
+                        <a href="#" class="header-top-link">FAQ</a>
+                        <a href="#" class="header-top-link">Контакты</a>
+                    </nav>
+    
+                    <div class="language">
+                        <div class="language-curent">
+                            <img src="img/icons/en.svg" alt="en" class="icon"> En
+                        </div>
+                        <div class="language-list"></div>
+                    </div>
+    
+                    <div class="header-top-contacts">
+                        <a href="#" class="social-link" rel="nofollow">
+                            <img src="img/icons/tg.svg" alt="telegram">
+                        </a>
+                        <a href="#" class="social-link" rel="nofollow">
+                            <img src="img/icons/wa.svg" alt="whatsapp">
+                        </a>
+                        <a href="tel:+971028822166" class="phone">(+971) 028822166</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-nav">
+            <div class="container">
+                <div class="header-nav-wrapper">
+                    <a href="/" class="logo">
+                        <img src="img/logo.png" alt="logo">
+                        Недвижимость в Абу-Даби
+                    </a>
+                    <nav class="header-nav-links">
+                        <a href="/" class="home-link header-nav-link"></a>
+                        <a class="header-nav-link" href="#">Каталог недвижимости</a>
+                        <a class="header-nav-link" href="#">Аренда</a>
+                        <a class="header-nav-link" href="#">Продажа</a>
+                        <a class="header-nav-link" href="#">Строящиеся объекты</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-mobile">
+            <div class="header-mobile-top">
+                <div class="container">
+                    <div class="header-mobile-top-wrapper">
+                        <a href="/" class="logo">
+                            <img src="img/logo.png" alt="logo">
+                            Недвижимость в Абу-Даби
+                        </a>
+                        <button class="header-mobile-button">
+                            <figure class="line"></figure>
+                            <figure class="line"></figure>
+                            <figure class="line"></figure>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="header-mobile-nav">
+                <div class="container">
+                    <div class="header-mobile-nav-wrapper">
+                        <div class="language">
+                            <div class="language-curent">
+                                <img src="img/icons/en.svg" alt="en" class="icon"> En
+                            </div>
+                            <div class="language-list"></div>
+                        </div>
+        
+                        <div class="header-mobile-links">
+                            <a href="/" class="header-mobile-link">Главная</a>
+                            <a href="#" class="header-mobile-link">Каталог недвижимости</a>
+                            <a href="#" class="header-mobile-link">Аренда</a>
+                            <a href="#" class="header-mobile-link">Продажа</a>
+                            <a href="#" class="header-mobile-link">Строящиеся объекты</a>
+                            <a href="#" class="header-mobile-link">О нас</a>
+                            <a href="#" class="header-mobile-link">FAQ</a>
+                            <a href="#" class="header-mobile-link">Контакты</a>
+                        </div>
+        
+                        <div class="header-mobile-contacts">
+                            <a href="tel:+971028822166" class="phone">(+971) 028822166</a>
+                            <a href="#" class="social-link" rel="nofollow">
+                                <img src="img/icons/tg.svg" alt="telegram">
+                            </a>
+                            <a href="#" class="social-link" rel="nofollow">
+                                <img src="img/icons/wa.svg" alt="whatsapp">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="catalogpage">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="/">Главная</a>
+                <span>Каталог недвижимости</span>
+            </div>
+
+            <h1>Каталог недвижимости</h1>
+            <img src="img/catalogpage-bg.png" alt="Фон" class="catalogpage-bg">
+
+            <form action="" class="catalogpage-form form">
+                <div class="form-title">Что вы ищете?</div>
+                <div class="form-item">
+                    <span>Город</span>
+                    <select>
+                        <option value="" selected>Абу-Даби</option>
+                        <option value="">Абу-Даби</option>
+                        <option value="">Абу-Даби</option>
+                    </select>
+                </div>
+                <div class="form-item">
+                    <span>Тип транзакции</span>
+                    <select>
+                        <option value="" selected>Аренда</option>
+                        <option value="">Покупка</option>
+                        <option value="">Кража</option>
+                    </select>
+                </div>
+                <div class="form-item">
+                    <span>Тип недвижимости</span>
+                    <select>
+                        <option value="" selected>Жилая</option>
+                        <option value="">Нежилая</option>
+                        <option value="">Гараж</option>
+                    </select>
+                </div>
+                <div class="form-item">
+                    <span>Стоимость</span>
+                    <div class="inputs inputs__text">
+                        <label for="min">
+                            От
+                            <input type="text" id="min">
+                        </label>
+                        <label for="max">
+                            До
+                            <input type="text" id="max">
+                        </label>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <span>Количество спален</span>
+                    <div class="inputs inputs__radio">
+                        <label for="bedroom-1">
+                            <input value="1" type="radio" name="bedroom" id="bedroom-1" checked>
+                            <span>1</span>
+                        </label>
+                        <label for="bedroom-2">
+                            <input value="2" type="radio" name="bedroom" id="bedroom-2">
+                            <span>2</span>
+                        </label>
+                        <label for="bedroom-3">
+                            <input value="3" type="radio" name="bedroom" id="bedroom-3">
+                            <span>3</span>
+                        </label>
+                        <label for="bedroom-4">
+                            <input value="4" type="radio" name="bedroom" id="bedroom-4">
+                            <span>4</span>
+                        </label>
+                        <label for="bedroom-5">
+                            <input value="5+" type="radio" name="bedroom" id="bedroom-5">
+                            <span>5</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <span>Количество ванных</span>
+                    <div class="inputs inputs__radio">
+                        <label for="bathroom-1">
+                            <input value="1" type="radio" name="bathroom" id="bathroom-1" checked>
+                            <span>1</span>
+                        </label>
+                        <label for="bathroom-2">
+                            <input value="2" type="radio" name="bathroom" id="bathroom-2">
+                            <span>2</span>
+                        </label>
+                        <label for="bathroom-3">
+                            <input value="3" type="radio" name="bathroom" id="bathroom-3">
+                            <span>3</span>
+                        </label>
+                        <label for="bathroom-4">
+                            <input value="4" type="radio" name="bathroom" id="bathroom-4">
+                            <span>4</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <span>Тип жилья</span>
+                    <div class="inputs inputs__radio">
+                        <label for="type-1">
+                            <input value="Апартаменты" type="checkbox" name="type" id="type-1" checked>
+                            <span>Апартаменты</span>
+                        </label>
+                        <label for="type-2">
+                            <input value="Вилла" type="checkbox" name="type" id="type-2">
+                            <span>Вилла</span>
+                        </label>
+                        <label for="type-3">
+                            <input value="Дом" type="checkbox" name="type" id="type-3">
+                            <span>Дом</span>
+                        </label>
+                    </div>
+                </div>
+                <button class="button" type="submit">Применить</button>
+            </form>
+
+            <div class="cardview mobile">
+                <button data-type="list">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="color" width="40" height="40" rx="6" fill="#8B0202"/>
+                        <rect x="4" y="10" width="4" height="4" rx="2" fill="white"/>
+                        <rect x="11" y="10" width="25" height="4" rx="2" fill="white"/>
+                        <rect x="4" y="18" width="4" height="4" rx="2" fill="white"/>
+                        <rect x="11" y="18" width="25" height="4" rx="2" fill="white"/>
+                        <rect x="4" y="26" width="4" height="4" rx="2" fill="white"/>
+                        <rect x="11" y="26" width="25" height="4" rx="2" fill="white"/>
+                    </svg>  
+                </button>
+                <button data-type="full" class="active">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="color" width="40" height="40" rx="6" fill="#8B0202"/>
+                        <rect x="4" y="4" width="32" height="25" rx="3" fill="white"/>
+                        <rect x="4" y="32" width="32" height="4" rx="2" fill="white"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="grid">
+                <a href="#" class="card">
+                    <div class="card-img">
+                        <img src="img/object/1.png" alt="">
+                        <div class="card-price">от <span class="value">$3600</span> за кв/м</div>
+                        <div class="card-category">Апартаменты</div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Name of Project 1</h3>
+                        <p>Libero odio sed blandit feugiat ac. Eu scelerisque quis elit justo. Amet dis odio sodales malesuada quam molestie donec.</p>
+                    </div>
+                    <ul class="card-chars">
+                        <li class="card-char">
+                            <img src="img/icons/bed.svg" alt="Кровать">
+                            4 кровати
+                        </li>
+                        <li class="card-char">
+                            <img src="img/icons/bath.svg" alt="Ванная">
+                            2 ванные
+                        </li>
+                        <li class="card-char">
+                            <img src="img/icons/area.svg" alt="Площадь">
+                            72,3м2
+                        </li>
+                    </ul>
+                </a>
+                <a href="#" class="card">
+                    <div class="card-img">
+                        <img src="img/object/1.png" alt="">
+                        <div class="card-price">от <span class="value">$3600</span> за кв/м</div>
+                        <div class="card-category">Апартаменты</div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Name of Project 1</h3>
+                        <p>Libero odio sed blandit feugiat ac. Eu scelerisque quis elit justo. Amet dis odio sodales malesuada quam molestie donec.</p>
+                    </div>
+                    <ul class="card-chars">
+                        <li class="card-char">
+                            <img src="img/icons/bed.svg" alt="Кровать">
+                            4 кровати
+                        </li>
+                        <li class="card-char">
+                            <img src="img/icons/bath.svg" alt="Ванная">
+                            2 ванные
+                        </li>
+                        <li class="card-char">
+                            <img src="img/icons/area.svg" alt="Площадь">
+                            72,3м2
+                        </li>
+                    </ul>
+                </a>
+                <a href="#" class="card">
+                    <div class="card-img">
+                        <img src="img/object/1.png" alt="">
+                        <div class="card-price">от <span class="value">$3600</span> за кв/м</div>
+                        <div class="card-category">Апартаменты</div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Name of Project 1</h3>
+                        <p>Libero odio sed blandit feugiat ac. Eu scelerisque quis elit justo. Amet dis odio sodales malesuada quam molestie donec.</p>
+                    </div>
+                    <ul class="card-chars">
+                        <li class="card-char">
+                            <img src="img/icons/bed.svg" alt="Кровать">
+                            4 кровати
+                        </li>
+                        <li class="card-char">
+                            <img src="img/icons/bath.svg" alt="Ванная">
+                            2 ванные
+                        </li>
+                        <li class="card-char">
+                            <img src="img/icons/area.svg" alt="Площадь">
+                            72,3м2
+                        </li>
+                    </ul>
+                </a>
+                <a href="#" class="card">
+                    <div class="card-img">
+                        <img src="img/object/1.png" alt="">
+                        <div class="card-price">от <span class="value">$3600</span> за кв/м</div>
+                        <div class="card-category">Апартаменты</div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Name of Project 1</h3>
+                        <p>Libero odio sed blandit feugiat ac. Eu scelerisque quis elit justo. Amet dis odio sodales malesuada quam molestie donec.</p>
+                    </div>
+                    <ul class="card-chars">
+                        <li class="card-char">
+                            <img src="img/icons/bed.svg" alt="Кровать">
+                            4 кровати
+                        </li>
+                        <li class="card-char">
+                            <img src="img/icons/bath.svg" alt="Ванная">
+                            2 ванные
+                        </li>
+                        <li class="card-char">
+                            <img src="img/icons/area.svg" alt="Площадь">
+                            72,3м2
+                        </li>
+                    </ul>
+                </a>
+                <a href="#" class="card">
+                    <div class="card-img">
+                        <img src="img/object/1.png" alt="">
+                        <div class="card-price">от <span class="value">$3600</span> за кв/м</div>
+                        <div class="card-category">Апартаменты</div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Name of Project 1</h3>
+                        <p>Libero odio sed blandit feugiat ac. Eu scelerisque quis elit justo. Amet dis odio sodales malesuada quam molestie donec.</p>
+                    </div>
+                    <ul class="card-chars">
+                        <li class="card-char">
+                            <img src="img/icons/bed.svg" alt="Кровать">
+                            4 кровати
+                        </li>
+                        <li class="card-char">
+                            <img src="img/icons/bath.svg" alt="Ванная">
+                            2 ванные
+                        </li>
+                        <li class="card-char">
+                            <img src="img/icons/area.svg" alt="Площадь">
+                            72,3м2
+                        </li>
+                    </ul>
+                </a>
+                <a href="#" class="card">
+                    <div class="card-img">
+                        <img src="img/object/1.png" alt="">
+                        <div class="card-price">от <span class="value">$3600</span> за кв/м</div>
+                        <div class="card-category">Апартаменты</div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Name of Project 1</h3>
+                        <p>Libero odio sed blandit feugiat ac. Eu scelerisque quis elit justo. Amet dis odio sodales malesuada quam molestie donec.</p>
+                    </div>
+                    <ul class="card-chars">
+                        <li class="card-char">
+                            <img src="img/icons/bed.svg" alt="Кровать">
+                            4 кровати
+                        </li>
+                        <li class="card-char">
+                            <img src="img/icons/bath.svg" alt="Ванная">
+                            2 ванные
+                        </li>
+                        <li class="card-char">
+                            <img src="img/icons/area.svg" alt="Площадь">
+                            72,3м2
+                        </li>
+                    </ul>
+                </a>
+            </div>
+
+            <button class="button mobile">Показать еще</button>
+        </div>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-col">
+                    <a href="/" class="logo">
+                        <img src="img/logo.png" alt="logo">
+                        Недвижимость в Абу-Даби
+                    </a>
+                    <p>Zamakanai Real Estate Company has taken the lead in launching of the “Real Estate Intelligence” slogan.</p>
+                </div>
+
+                <nav class="footer-nav">
+                    <a href="#">Главная</a>
+                    <a href="#">Каталог недвижимости</a>
+                    <a href="#">Аренда</a>
+                    <a href="#">Продажа</a>
+                    <a href="#">Строящиеся объекты</a>
+                    <a href="#">О нас</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Контакты</a>
+                </nav>
+
+                <div class="footer-contacts">
+                    <div class="footer-contacts-phones">
+                        <a href="tel:+971028822166" class="phone">(+971) 028822166</a>
+                        <button class="button">Заказать звонок</button>
+                    </div>
+                    <div class="footer-contacts-links">
+                        <a class="mail" href="mailto:admin@zamakanai.com">Admin@zamakanai.com</a>
+                        <a href="live:Zamakanai_realstate" class="skype">Zamakanai_realstate</a>
+                    </div>
+                    <div class="footer-contacts-social">
+                        <a href="#" class="social-link" rel="nofollow">
+                            <img src="img/icons/fb.svg" alt="facebook">
+                        </a>
+                        <a href="#" class="social-link" rel="nofollow">
+                            <img src="img/icons/inst.svg" alt="instagram">
+                        </a>
+                        <a href="#" class="social-link" rel="nofollow">
+                            <img src="img/icons/tg.svg" alt="telegram">
+                        </a>
+                        <a href="#" class="social-link" rel="nofollow">
+                            <img src="img/icons/wa.svg" alt="whatsapp">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-wrapper">
+                    <p>Все права защищены, 2023</p>
+                    <a href="#">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

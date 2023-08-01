@@ -1,0 +1,131 @@
+.catalogpage {
+    .button.mobile {
+        display: none;
+    }
+
+    @include mobile {
+
+        .button.mobile {
+            display: block;
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+
+    .breadcrumbs {
+        a {
+            color: rgba($color: #fff, $alpha: 0.5);
+        }
+        span {
+            color: #fff;
+        }
+
+        @include mobile {
+            margin: 0px 0px 30px;
+        }
+    }
+
+    h1 {
+        color: #fff;
+        margin: 0px 0px 78px;
+
+        @include mobile {
+            margin: 0px 0px 214px;
+        }
+    }
+
+    &-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        height: 460px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+
+        @include mobile {
+            height: 400px;
+        }
+    }
+
+    &-form {
+        position: relative;
+        border-radius: 0px 16px 16px 16px;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-wrap: wrap;
+        gap: 30px 20px;
+
+        @include mobile {
+            gap: 20px;
+        }
+
+        .form-title {
+            font-family: SofiaSans, sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(0, calc(-100% + 1px));
+            background: #fff;
+            border-radius: 16px 16px 0px 0px;
+            padding: 14px 15px 12px;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 8px;
+
+            &::before {
+                content: '';
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                background: url('../img/icons/lens.svg') no-repeat center;
+                background-size: contain;
+            }
+        }
+
+        .form-item {
+            flex: 0 0 calc((100% - 60px) / 4);
+
+            @include mobile {
+                flex: 0 0 100%;
+
+                select,
+                .inputs__text {
+                    height: 60px;
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .button {
+            margin-left: auto;
+            margin-top: auto;
+
+            @include mobile {
+                margin: 0;
+            }
+        }
+    }
+
+    .grid {
+        padding: 40px 0px 60px;
+
+        @include mobile {
+            padding: 20px 0px 30px;
+            width: 100vw;
+            position: relative;
+            left: -16px;
+
+            .card {
+                border-radius: 0;
+            }
+        }
+    }
+}

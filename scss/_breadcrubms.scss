@@ -1,11 +1,7 @@
 .breadcrumbs {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    gap: 4px;
     font-size: 14px;
     margin: 20px 0px 30px;
-
+    
     @include mobile {
         margin: 0px 0px 20px;
     }
@@ -13,14 +9,12 @@
     a {
         color: rgba(52, 60, 67, 0.50);
         font-size: inherit;
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        gap: 4px;
+        margin-right: 4px;
         &::after {
             content: '/';
             color: inherit;
             font-size: inherit;
+            margin-left: 4px;
         }
     }
 }

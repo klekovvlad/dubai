@@ -41,3 +41,60 @@
         opacity: .5;
     }
 }
+
+@include mobile {
+    .cardview {
+        padding: 30px 0px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+
+        button {
+            border: none;
+            background: transparent;
+            width: 40px;
+            height: 40px;
+
+            svg {
+                width: 40px;
+                height: 40px;
+                opacity: 0.6;
+                pointer-events: none;
+
+                rect.color {
+                    fill: #939597;
+                }
+            }
+
+            &.active {
+                svg {
+                    opacity: 1;
+
+                    rect.color {
+                        fill: var(--main);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.gallery-button {
+    cursor: pointer;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: var(--main) url('../img/icons/gallery-arrow.svg') no-repeat center;
+    background-size: 24px 24px;
+    border: none;
+
+    &-prev {
+        transform: rotate(180deg);
+    }
+
+    &-disabled {
+        cursor: auto;
+        opacity: 0.4;
+    }
+}
