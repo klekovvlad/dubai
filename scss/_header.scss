@@ -216,7 +216,6 @@
             right: 0;
             left: 0;
             z-index: 5;
-            overflow: auto;
             
 
             &-top {
@@ -315,6 +314,7 @@
             &.open {
                 background: var(--main);
                 height: 100vh;
+                overflow: auto;
                 .header-mobile {
                     &-nav {
                         opacity: 1;

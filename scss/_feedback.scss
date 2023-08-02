@@ -55,7 +55,7 @@
         background: #fff;
 
         time {
-            opacity: 0.6;
+            color: var(--time);
         }
 
         @include tablet {
@@ -88,7 +88,7 @@
         }
 
         &-profession {
-            opacity: 0.6;
+            color: var(--time);
         }
     }
 

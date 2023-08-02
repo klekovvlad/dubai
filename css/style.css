@@ -5,12 +5,15 @@
   --black: #000;
   --main: #8B0202;
   --title: #1E2429;
+  --headline: #312F30;
   --text: #4F5860;
   --text80: #6B7279;
   --blue: #3060DC;
   --input: #312F30;
   --gray: #656565;
   --footer-link: #343C43;
+  --light-gray: #72797F;
+  --time: #949A9F;
   --shadow40: 0px 6px 40px 0px rgba(0, 0, 0, 0.10);
 }
 
@@ -266,6 +269,18 @@ h4 {
   font-size: 1.25rem;
 }
 
+.title-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .language-curent {
   cursor: pointer;
   display: -webkit-box;
@@ -337,6 +352,22 @@ h4 {
   border-radius: 100px;
   padding: 15px 24px;
   text-align: center;
+}
+@media (max-width: 767px) {
+  .button.desktop {
+    display: none;
+  }
+}
+.button.mobile {
+  display: none;
+}
+@media (max-width: 767px) {
+  .button.mobile {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    margin: 30px auto 0;
+  }
 }
 
 .slider-buttons {
@@ -1288,7 +1319,6 @@ form.blue h2 {
     right: 0;
     left: 0;
     z-index: 5;
-    overflow: auto;
   }
   .header-mobile-top {
     background: #fff;
@@ -1397,6 +1427,7 @@ form.blue h2 {
   .header-mobile.open {
     background: var(--main);
     height: 100vh;
+    overflow: auto;
   }
   .header-mobile.open .header-mobile-nav {
     opacity: 1;
@@ -1805,7 +1836,7 @@ form.blue h2 {
   color: var(--white);
 }
 .about p {
-  opacity: 0.8;
+  color: var(--light-gray);
 }
 .about-wrapper {
   display: -webkit-box;
@@ -1995,7 +2026,7 @@ form.blue h2 {
   background: #fff;
 }
 .feedback-item time {
-  opacity: 0.6;
+  color: var(--time);
 }
 @media (max-width: 1199px) {
   .feedback-item {
@@ -2032,7 +2063,7 @@ form.blue h2 {
   font-weight: 700;
 }
 .feedback-author-profession {
-  opacity: 0.6;
+  color: var(--time);
 }
 @media (max-width: 767px) {
   .feedback-bottom {
@@ -2191,7 +2222,7 @@ form.blue h2 {
   }
 }
 .aboutpage-text p {
-  opacity: 0.8;
+  color: var(--light-gray);
 }
 .aboutpage .gallery {
   padding: 60px 0px;
@@ -2337,7 +2368,7 @@ form.blue h2 {
 }
 @media (max-width: 767px) {
   .catalogpage .grid {
-    padding: 20px 0px 30px;
+    padding: 20px 0px 0px;
     width: 100vw;
     position: relative;
     left: -16px;
@@ -2599,6 +2630,94 @@ form.blue h2 {
   .object-chars {
     padding: 16px;
   }
+}
+
+.faqpage {
+  padding: 0px 0px 60px;
+}
+.faqpage .title-wrapper {
+  margin: 0px 0px 35px;
+}
+@media (max-width: 767px) {
+  .faqpage .title-wrapper {
+    margin: 0px 0px 20px;
+  }
+}
+.faqpage-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 10px;
+}
+
+.faq-item {
+  width: 100%;
+  padding: 25px 35px;
+  border-radius: 16px;
+  background: #fff;
+  -webkit-box-shadow: var(--shadow40);
+          box-shadow: var(--shadow40);
+}
+@media (max-width: 767px) {
+  .faq-item {
+    padding: 16px;
+  }
+}
+.faq-item.active .faq-answer {
+  display: block;
+}
+.faq-item.active .faq-question::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.faq-question {
+  cursor: pointer;
+  color: var(--headline);
+  font-size: 1.125rem;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+@media (max-width: 767px) {
+  .faq-question {
+    font-size: 1rem;
+    gap: 10px;
+  }
+}
+.faq-question::after {
+  content: "";
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 36px;
+          flex: 0 0 36px;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--main) url("../img/icons/arrow-white.svg") no-repeat 50% 55%;
+  background-size: 16px 16px;
+}
+.faq-answer {
+  display: none;
+  padding: 10px 0px 0px;
+  line-height: 1.5;
 }
 
 .footer {
