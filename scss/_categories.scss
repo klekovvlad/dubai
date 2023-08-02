@@ -17,6 +17,7 @@
         border-radius: 100px;
         background: var(--white);
         font-size: 0.9375rem;
+        white-space: nowrap;
 
         &.active {
             color: var(--white);

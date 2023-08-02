@@ -60,7 +60,6 @@
 
 @include mobile {
     .cardview {
-        padding: 30px 0px 0px;
         display: flex;
         align-items: center;
         justify-content: start;
@@ -92,6 +91,12 @@
                     }
                 }
             }
+        }
+    }
+
+    .catalogpage {
+        .cardview {
+            padding: 30px 0px 0px;
         }
     }
 }

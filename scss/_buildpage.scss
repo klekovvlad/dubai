@@ -1,0 +1,29 @@
+.buildpage {
+    .categories {
+        .category {
+            padding: 16px 26px;
+            width: 180px;
+            font-size: 1rem;
+        }
+    }
+
+    @include mobile {
+        .title-wrapper {
+            grid-gap: 20px 5px;
+
+            h1 {
+                flex: 0 0 100%;
+            }
+
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .categories {
+            .category {
+                width: max-content;
+                font-size: 0.875rem;
+            }
+        }
+    }
+}

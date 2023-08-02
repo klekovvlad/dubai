@@ -47,15 +47,14 @@
             display: flex;
             align-items: center;
             justify-content: start;
-            gap: 15px;
+            gap: 60px;
+
+            @include tablet {
+                gap: 35px;
+            }
 
             .phone {
                 color: #fff;
-                margin-left: 45px;
-
-                @include tablet {
-                    margin-left: 20px;
-                }
             }
         }
     }
@@ -141,7 +140,6 @@
 
             @include mobile {
                 padding: 50px 26px 70px;
-                // margin: 100px 0px 0px;
             }
 
 
@@ -308,6 +306,13 @@
                 .phone {
                     color: #fff;
                     flex: 0 0 100%;
+                }
+
+                .social-link {
+                    img {
+                        width: 32px;
+                        height: 32px;
+                    }
                 }
             }
 

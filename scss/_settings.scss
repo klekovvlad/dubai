@@ -48,12 +48,15 @@ main {
         }
     }
 
-    @include mobile {
-        &:not(.mainpage) {
+    &:not(.mainpage) {
+        padding: 0px 0px 90px;
+        
+        @include mobile {
             padding: 20px 0px 60px;
             margin-top: 80px;
         }
     }
+
 }
 
 .grid {
